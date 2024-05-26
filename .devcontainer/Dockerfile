@@ -14,3 +14,8 @@ RUN curl -sLS https://get.arkade.dev | sudo sh && \
 RUN arkade get cosign crane dive grype pack syft trivy && \
     chmod +x $HOME/.arkade/bin/* && \
     mv $HOME/.arkade/bin/* /usr/local/bin/
+
+RUN /usr/local/go/bin/go install github.com/sigstore/gitsign@latest && \
+    chmod +x $HOME/go/bin/* && \
+    mv $HOME/go/bin/* /usr/local/bin/ && \
+    rm -Rf $HOME/go
