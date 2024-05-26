@@ -1,0 +1,21 @@
+services:
+  dtrack-apiserver:
+    image: docker.io/dependencytrack/apiserver:4.11.1
+    ports:
+      - '9091:8080'
+    volumes:
+      - 'dependency-track:/data'
+    restart: unless-stopped
+
+  dtrack-frontend:
+    image: docker.io/dependencytrack/frontend:4.11.1
+    depends_on:
+      - dtrack-apiserver
+    environment:
+      - API_BASE_URL=http://localhost:9091
+    ports:
+      - "9090:8080"
+    restart: unless-stopped
+
+volumes:
+  dependency-track:
