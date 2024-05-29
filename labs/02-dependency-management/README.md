@@ -1,4 +1,4 @@
-# Dependency Management Management
+# Dependency Management
 
 ## Learning Goals
 
@@ -102,7 +102,7 @@ Open the `pom.xml` file inside the `dependencies-maven-demo` folder and declare 
 </dependency>
 ```
 
-Maven will now resolve the conflict by using the explicit version you have just declared in the `build.gradle` file because it's the nearest node in the dependency graph. Verify that by checking the dependency list again (`io.micrometer:micrometer-observation:jar:1.12.6:compile`).
+Maven will now resolve the conflict by using the explicit version you have just declared in the `pom.xml` file because it's the nearest node in the dependency graph. Verify that by checking the dependency list again (`io.micrometer:micrometer-observation:jar:1.12.6:compile`).
 
 ```shell
 ./mvnw dependency:tree -Dverbose

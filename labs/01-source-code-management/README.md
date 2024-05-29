@@ -16,7 +16,7 @@ In this exercise, you will see how to configure your Git repository to sign your
 GitHub actively supports verifying commits signed with GPG, SSH, or S/MIME. In this excercise, you will generate an SSH key and use it to sign Git commits.
 
 * Generate a new SSH key by following the GitHub [instructions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key) for your operating system. You will only need to follow the steps in the "Generating a new SSH key" section.
-* Next, GitHub needs to know your public key in order to trust commits signed with your newly generated SSH key. Follow the [instructions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account?tool=webui#adding-a-new-ssh-key-to-your-account) to add the SSH key to your GitHub account.
+* Next, GitHub needs to know your public key in order to trust commits signed with your newly generated SSH key. Follow the [instructions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account?tool=webui#adding-a-new-ssh-key-to-your-account) to add the SSH key to your GitHub account. NOTE: Make sure you add your SSH key as a "Signing Key" and not as an "Authentication Key".
 * Finally, Git also needs to know about your SSH key. From the root folder of this repository, open a Terminal window and run the following commands to configure your copy of this Git repository to sign commits with your SSH key.
 
 ```shell
