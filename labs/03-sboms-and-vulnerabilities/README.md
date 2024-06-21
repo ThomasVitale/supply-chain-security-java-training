@@ -61,7 +61,7 @@ plugins {
 
 The plugin adds a `cyclonedxBom` task to generate an SBOM for the application. You can also make it part of the build step so that every time you build the application, an SBOM is generated automatically.
 
-Since we're using Spring Boot 3.3.0, we don't need any extra configuration because Spring Boot has introduced native support for the CycloneDX Gradle and Maven plugins. Whenever you package your application as a JAR file, Spring Boot will take care of generating an SBOM for you and include it in the final JAR artifact.
+Since we're using Spring Boot 3.3.1, we don't need any extra configuration because Spring Boot has introduced native support for the CycloneDX Gradle and Maven plugins. Whenever you package your application as a JAR file, Spring Boot will take care of generating an SBOM for you and include it in the final JAR artifact.
 
 ```shell
 ./gradlew bootJar
@@ -80,7 +80,7 @@ Let's now try the same for Maven. First, add the CycloneDX Maven plugin to the `
 
 The plugin adds a `makeAggregateBom` target to generate an SBOM for the application. You can also make it part of the build step so that every time you build the application, an SBOM is generated automatically.
 
-Since we're using Spring Boot 3.3.0, we don't need any extra configuration because Spring Boot has introduced native support for the CycloneDX Gradle and Maven plugins. Whenever you package your application as a JAR file, Spring Boot will take care of generating an SBOM for you and include it in the final JAR artifact.
+Since we're using Spring Boot 3.3.1, we don't need any extra configuration because Spring Boot has introduced native support for the CycloneDX Gradle and Maven plugins. Whenever you package your application as a JAR file, Spring Boot will take care of generating an SBOM for you and include it in the final JAR artifact.
 
 ```shell
 cd ../sbom-maven-demo

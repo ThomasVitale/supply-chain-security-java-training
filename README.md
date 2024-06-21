@@ -46,7 +46,7 @@ Open IntelliJ IDEA. From the Welcome screen, choose `Remote Development > Dev Co
 Pre-requisites:
 
 * [Podman](https://podman-desktop.io) or [Docker](https://www.docker.com)
-* Java 21 (install via [SDKMAN!](https://sdkman.io/jdks))
+* Java 22 (install via [SDKMAN!](https://sdkman.io/jdks))
 * Your favourite Java IDE
 
 Clone the repository (`git clone https://github.com/ThomasVitale/supply-chain-security-java-training.git`) and open it in your favourite Java IDE.
